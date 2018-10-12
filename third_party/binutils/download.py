@@ -113,6 +113,8 @@ def main(args):
   if arch in options.ignore_if_arch:
     return 0
 
+  return FetchAndExtract(arch)
+
   if arch == 'x64':
     return FetchAndExtract(arch)
   if arch == 'ia32':
